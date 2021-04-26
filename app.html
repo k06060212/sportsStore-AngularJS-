@@ -9,13 +9,40 @@
     <link href="/ngmodules/angularjs/bootstrap-theme.css" rel="stylesheet" />
 
     <script>
-        angular.module("sportsStore", ["customFilters", "cart"]);
+        angular.module("sportsStore",["customFilters", "cart"])
+
+        // angular.module("sportsStore", ["customFilters", "cart", "ngRoute"])
+        // .config(function($routeProvider){
+        //     $routeProvider.when("/complete",{
+        //         templateUrl: "/views/thankYou.html"
+        //     });
+
+        //     $routeProvider.when("/placeorder",{
+        //         templateUrl: "/views/placeOrder.html"
+        //     })
+        // });
+
+        // angular.module("sportsStore", ["customFilters", "cart", "ngRoute"])
+        // .config(function($routeProvider){
+        //     $routeProvider.when("/checkout",{
+        //         templateUrl: "/views/checkoutSummary.html"
+        //     })
+        //     .when("/products",{
+        //         templateUrl: "/views/productList.html"
+        //     })
+        //     .otherwise({
+        //         templateUrl: "/views/productList.html"
+        //     })
+
+        // })
     </script>
 
     <script src="controllers/sportsStore.js"></script>
     <script src="filters/customFilters.js"></script>
     <script src="controllers/productListControllers.js"></script>
     <script src="components/cart/cart.js"></script>
+    <script src="ngmodules\angularjs\angular-route.js"></script>
+    <script src="controllers/checkoutControllers.js"></script>
 
 </head>
 <body ng-controller="sportsStoreCtrl">
